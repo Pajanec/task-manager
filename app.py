@@ -12,9 +12,7 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
-MONGODB_URI = os.environ.get("MONGO_URI")
-DBS_NAME = "task_manager"
-COLLECTION_NAME = "tasks"
+
 
 
 @app.route('/')
